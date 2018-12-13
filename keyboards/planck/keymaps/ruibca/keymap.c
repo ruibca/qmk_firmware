@@ -117,20 +117,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Raise
  * ,-----------------------------------------------------------------------------------.
- * |  Del |   !  |   "  |   #  |   $  |   %  |   ^  |   &  |   *  |      |  _   |      |
+ * |  Del |   !  |   "  |      |   $  |   %  |   ^  |   &  |   *  |  (   |  )   |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |   @  |   ~  |      |   (  |   )  |      | Left | Down |  Up  |Right |      |      |
+ * |   @  |   ~  |      |   {  |   }  |   _  | Left | Down |  Up  |Right |      |      |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
- * |   |  |      |      |   {  |   }  |      | Home |Pg Dn |Pg Up | End  |      |      |
+ * |   |  |   #  |      |   [  |   ]  |      | Home |Pg Dn |Pg Up | End  |      |      |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * |   \  |      |      |   [  |   ]  |             |      | Mute | Vol- | Vol+ | Play |
+ * |   \  |      |      |      |      |             |      | Mute | Vol- | Vol+ | Play |
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_planck_grid(
-    KC_DEL,  KC_EXLM, KC_DQUO, KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, _______, KC_UNDS, _______,
-    KC_AT,   KC_TILD, _______, KC_LPRN, KC_RPRN, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, 
-    KC_PIPE, _______, _______, KC_LCBR, KC_RCBR, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  _______, _______,
-    KC_BSLS, _______, _______, KC_LBRC, KC_RBRC, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_MPLY
+    KC_DEL,  KC_EXLM, KC_DQUO, _______, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN,KC_RPRN , _______,
+    KC_AT,   KC_TILD, _______, KC_LCBR, KC_RCBR, KC_UNDS, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, _______, 
+    KC_PIPE, KC_HASH, _______, KC_LBRC, KC_RBRC, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  _______, _______,
+    KC_BSLS, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_MPLY
 ),
 
 /* Plover layer (http://opensteno.org)
