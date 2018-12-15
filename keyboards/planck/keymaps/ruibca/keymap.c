@@ -360,6 +360,7 @@ bool music_mask_user(uint16_t keycode) {
   switch (keycode) {
     case RAISE:
     case LOWER:
+    case LFN:
       return false;
     default:
       return true;
