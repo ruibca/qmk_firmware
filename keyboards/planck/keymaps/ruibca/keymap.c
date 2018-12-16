@@ -104,7 +104,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * |  Del |   !  |   "  |      |   $  |   %  |   ^  |   &  |   *  |      |   _  |      |
  * |------+------+------+------+------+-------------+------+------+------+------+------|
- * |      |   (  |   )  |   {  |   }  |      | Left | Down |  Up  |Right |      |  '   |
+ * |      |   (  |   )  |   {  |   }  |      | Left | Down |  Up  |Right |   `  |  '   |
  * |------+------+------+------+------+------|------+------+------+------+------+------|
  * |      |   \  |   |  |   [  |   ]  |      | Home |Pg Dn |Pg Up | End  |      |   ~  |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -113,7 +113,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT_planck_grid(
     KC_DEL,  KC_EXLM, KC_DQUO, _______, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, _______, KC_UNDS, _______,
-    _______, KC_LPRN, KC_RPRN, KC_LCBR, KC_RCBR, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, _______, KC_QUOT, 
+    _______, KC_LPRN, KC_RPRN, KC_LCBR, KC_RCBR, _______, KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_GRV,  KC_QUOT, 
     _______, KC_BSLS, KC_PIPE, KC_LBRC, KC_RBRC, _______, KC_HOME, KC_PGDN, KC_PGUP, KC_END,  _______, KC_TILD,
     _______, _______, _______, _______, _______, _______, _______, _______, KC_MUTE, KC_VOLD, KC_VOLU, KC_MPLY
 ),
